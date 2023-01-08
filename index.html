@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+    <style>
+      body{
+        height: 5000px;
+      }
+      .one-container{
+        position: relative;
+      }
+      .two{
+        position: absolute;
+        top: -4px;
+        right: 10px;
+        opacity: .9;
+      }
+      .discover:hover{
+        background-color: #5143D9;
+        color: white !important;
+      }
+       .container-1{
+        position: relative;
+       }
+       .relative-image{
+        position: relative;
+       }
+       .image-1{
+        position: absolute;
+        top: 30px;
+        left: -35px;
+       }
+       .image-2{
+        position: absolute;
+        top: 150px;
+        left:-45px;
+       }
+       .image-3{
+        position: absolute;
+        top: -20px;
+        right: -20px;
+       }
+      
+       .form-container{
+        position: relative;
+        bottom: 10px;
+       }
+       .search{
+        position: absolute;
+        top: 40px;
+        right: -15px;
+       }
+       .image-relative{
+        position: relative;
+       }
+       .client-absolute{
+        position: absolute;
+        bottom: 50px;
+        left: 40px;
+       }
+       .icon{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+      
+       }
+       .newyork-relative{
+        position: relative;
+       }
+       .newyork-absolute{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+       }
+       .surprise-relative{
+        position: relative;
+       }
+       .surprise-absolute{
+        position: absolute;
+        top: 80px;
+        left: 20px;
+       }
+      /* a.text-primary-hover:hover{
+        #5143D9
+      } */
+      
+    </style>
+</head>
+<body>
+  <div class="p-3 px-4 bg-primary position-fixed rounded-2" style="z-index:10;bottom:50px;right:50px">
+    <i class="fa-solid fa-arrow-up-long text-white"></i>
+  </div>
+   <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container ">
+                <a class="navbar-brand me-4" href="#">
+                    <img src="./img/logo (1).svg" class="" style="width: 100px;" alt="">
+                </a>
+                <!-- menu -->
+                <div data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-bars me-2 fs-4"></i>
+                        <span class="fs-5">Menu</span>
+                    </div>
+                </div>
+                <div class="d-flex ms-auto align-items-center" >
+                    <!-- category -->
+                   <div data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                     <div class="d-flex align-items-center me-4">
+                            <i class="bi bi-grid-3x3-gap-fill fs-4 me-2"></i>
+                            <span class="fs-6 d-none d-sm-block ">Category</span>
+                     </div>
+                   </div>
+                   <!-- notification -->
+                   <div class="dropdown-center ">
+                        <button class="btn btn-secondary me-4   " style="width: 45px ; height: 45px;" type="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-bell fa-fw " style="font-size: 12px;"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end ">
+                            <div class="card border-0 " style="width: 350px;">
+                                <div class="card-header px-4 bg-transparent  ">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="fw-bold">Notifications  <span class="badge text-bg-danger bg-opacity-25 fw-light text-danger">4 new</span></h6>
+                                        <a href="" class="text-decoration-none small">Clear all</a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group  list-group-flush list-unstyled ">
+									<!-- Notification item -->
+									    <li class="list-group-item rounded-3 border-0 list-group-item-action bg-light">
+                                            <a href="" class="text-decoration-none text-dark ">
+                                                <div class="card-title">
+                                                    <h6 class="mb-2 fw-bold ">New! Booking flights from New York ✈️</h6>
+                                                </div>
+                                                <div class="card-text">
+                                                    <p class="mb-1 small text-muted">Find the flexible ticket on flights around the world. Start searching today</p>
+                                                </div>
+                                                <div class="text-muted">Wednesday</div>
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item rounded-3 list-group-item-action my-2">
+                                            <a href="" class="text-decoration-none text-dark ">
+                                                <div class="card-title">
+                                                    <h6 class="mb-2 fw-bold">Sunshine saving are here 🌞 save 30% or more on a stay</h6>
+                                                </div>
+                                                <div class="card-text">
+                                                    <p class="mb-1 small text-muted">Find the flexible ticket on flights around the world. Start searching today</p>
+                                                </div>
+                                                <div class="text-muted">15 Nov 2022</div>
+                                            </a>
+                                        </li>
+								    </ul>
+                                    
+                                    
+                                </div>
+                                <div class="card-footer px-4 bg-transparent text-center">
+                                    <a href="" class="text-decoration-none small fw-bold ">
+                                        See all incoming activity
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                   <!-- profile -->
+                   <div class="dropdown-center ">
+                      <div class="" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./img/01.jpg" class="rounded-3"  style="width: 45px;" alt="">
+                      </div>
+                      <div class="dropdown-menu pt-0 dropdown-menu-end">'
+                        <div class="card border-0 " style="width: 300px;">
+                          <div class="card-header bg-transparent d-flex justify-content-start align-items-center px-4 m-0">
+                            
+                              <img src="./img/01.jpg" class=" rounded-circle me-3" style="width: 45px;" alt="">
+                              <a href="" class="text-decoration-none text-dark fw-bold  m-0">
+                                Lori Ferguson
+                                <div class="text-muted fw-light">example@gmail.com</div>
+                              </a>
+                             
+                          </div>
+                          <div class="card-body ">
+                            <ul class="list-group">
+                              <li class="list-group-item list-group-item-action rounded-2 p-2 border-0">
+                                <a href="" class="text-decoration-none text-black-50 fw-bold p-1">
+                                  <i class="bi bi-bookmark-check fa-fw me-2"></i>
+                                  Booking
+                                </a>
+                              </li>
+                              <li class="list-group-item list-group-item-action rounded-2 p-2 border-0">
+                                <a href="" class="text-decoration-none text-black-50 fw-bold p-1">
+                                  <i class="bi bi-heart fa-fw me-2"></i>
+                                  My Wishlist
+                                </a>
+                              </li>
+                              <li class="list-group-item list-group-item-action rounded-2 p-2 border-0">
+                                <a href="" class="text-decoration-none text-black-50 fw-bold p-1">
+                                  <i class="bi bi-gear fa-fw me-2"></i>
+                                  Settings
+                                </a>
+                              </li>
+                              <li class="list-group-item list-group-item-action rounded-2 p-2 border-0">
+                                <a href="" class="text-decoration-none text-black-50 fw-bold p-1">
+                                  <i class="bi bi-info-circle fa-fw me-2"></i>
+                                  Help Center
+                                </a>
+                              </li>
+                              <li class="list-group-item list-group-item-action rounded-2 p-2 border-0">
+                                <a href="" class="text-decoration-none text-black-50 fw-bold p-1">
+                                  <i class="bi bi-power fa-fw me-2"></i>
+                                  Sign Out
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="card-footer bg-transparent px-4">
+                            <div class="form-check form-switch ">
+                              <input class="form-check-input me-3" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                              <label class="form-check-label" for="flexSwitchCheckDefault">Dark mode</label>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                   </div>
+                </div>
+              
+            </div>
+        </nav>
+        <!-- menu collapse -->
+        <div class="collapse shadow-lg" id="collapseExample">
+                 <ul class="list-group  ">
+                 
+                   
+                  <li class="list-group-item">
+                    <a href="" class="btn  dropdown-toggle d-flex justify-content-between align-items-center border-0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      
+                        Listings
+                      
+                    </a>
+                     <ul class="dropdown-menu p-3" style="width: 1060px;">
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Hotels</a></li>
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Flights</a></li>
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Tour</a></li>
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Cabs</a></li>
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Add Listings</a></li>
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Hero</a></li>
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Booking Comfirmed</a></li>
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Campare Listings</a></li>
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Offer Detail</a></li>
+                     
+                    </ul>
+                  </li>
+                   <li class="list-group-item">
+                    <a href="" class="btn  dropdown-toggle d-flex justify-content-between align-items-center border-0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      
+                        Pages
+                      
+                    </a>
+                     <ul class="dropdown-menu p-3" style="width: 1060px;">
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Hotels</a></li>
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Flights</a></li>
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Tour</a></li>
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Cabs</a></li>
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Add Listings</a></li>
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Hero</a></li>
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Booking Comfirmed</a></li>
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Campare Listings</a></li>
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Offer Detail</a></li>
+                     
+                    </ul>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="" class="btn  dropdown-toggle d-flex justify-content-between align-items-center border-0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      
+                        Accounts
+                      
+                    </a>
+                     <ul class="dropdown-menu p-3" style="width: 1060px;">
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Hotels</a></li>
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Flights</a></li>
+                      <li><a class="dropdown-item fw-bolder text-muted " href="#">Tour</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="list-group-item">
+                     <div data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      . . .
+                    </div>
+                    <div class="collapse" id="collapseExample1">
+                      <div class="card">
+                        <div class="card-body">
+                           <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-action mt-1 border-0 ">
+                              <a href="">
+                                <i class="text-warning fa-fw bi bi-life-preserver me-2"></i>
+                                Support
+                              </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action  ">
+                              <a href="" >
+                                <i class="text-danger fa-fw bi bi-card-text me-2"></i>
+                                Documentation
+                              </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action border-0 mt-1">
+                              <a href="">
+                                <i class="text-info fa-fw bi bi-toggle-off me-2"></i>
+                                RTL demo
+                              </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action">
+                              <a href="">
+                                <i class="text-success fa-fw bi bi-cloud-download-fill me-2"></i>
+                                Buy Booking!
+                              </a>
+                            </li>
+                            <li class="list-group-item list-group-item-action mt-1">
+                              <a href="">
+                                <i class="text-eks fa-fw bi bi-puzzle-fill me-2"></i>
+                                Components
+                              </a>
+                            </li>
+                        </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+          
+        </div>
+        <!-- category collapse -->
+        <div class="collapse shadow-lg" id="collapseExample1">
+                 <div class="list-group text-center p-2 ">
+                    <a href="" class="text-decoration-none list-group-item list-group-item-action rounded-2 border-0 category  text-dark bg-light "><i class="fa-solid fa-hotel me-2 fa-fw"></i>Hotel</a>
+                    <a href="" class="text-decoration-none list-group-item list-group-item-action rounded-2 border-0 category text-dark"><i class="fa-solid fa-plane me-2 fa-fw"></i>Flight</a>
+                    <a href="" class="text-decoration-none list-group-item list-group-item-action rounded-2 border-0 category text-dark"><i class="fa-solid fa-globe-americas me-2 fa-fw" ></i>Tour</a>
+                    <a href="" class="text-decoration-none list-group-item list-group-item-action rounded-2 border-0 category text-dark"><i class="fa-solid fa-car me-2 fa-fw"></i>Hotel</a>
+                   
+                </div>
+        </div>
+   </header>
+   <main>
+    <section class="hero ">
+      <div class="container  ">
+        <div class="row  mt-5 d-flex align-items-center">
+          <!-- hero text  -->
+          <div class="col-12 col-lg-6 mb-4 ">
+            <h1 class="display-3 fw-bold ">
+              Find the top Hotels nearby.
+            </h1>
+            <p class="text-muted">We bring you not only a stay option, but an experience in your budget to enjoy the luxury.</p>
+            <button class="btn btn-secondary text-primary fw-bold me-4 discover  " style="letter-spacing: 1px;">Discover Now</button>
+            <a href="https://www.youtube.com/embed/tXHviS-4ygo" class="one-container">
+              <img src="./img/12 (1).jpg" class="rounded-circle" style="width: 50px;" >
+              <!-- <i class="fas fa-play two" style="font-style: 8px;"></i> -->
+              <button class="btn btn-white btn-sm two rounded-circle  ">
+                <i class="fas fa-play" style="font-style: 7px;"></i>
+              </button>
+            </a>
+            <!-- <div>
+               <a href="https://www.youtube.com/embed/tXHviS-4ygo" class="text-decoration-none  text-black fw-bold text-muted">
+              Watch our story
+            </a>
+            </div> -->
+          </div>
+          <!-- hero image  -->
+          <div class="col-12  ps-lg-5 col-lg-6 position-relative">
+            <div class="container-1">
+              <img src="./img/06.jpg" class="w-100 relative-image rounded-3" alt="">
+              <img src="./img/11 (1).jpg" class="rounded-circle border image-1 border-3 border-white shadow-sm " style="width: 70px; height: 70px; ">
+              <img src="./img/12 (2).jpg" class="rounded-circle border image-2 border-3 border-white shadow-sm " style="width:90px; height: 90px;" alt="">
+              <div class="card  border bg-transparent border-2 border-white shadow   image-3 " style="width: 150px;">
+                <div class="card-body  p-0 text-center py-3">
+                  <i class="bi bi-headset text-danger fs-2"></i>
+                  <h5 class="fw-bold">24 / 7</h5>
+                  <p class="m-0">Guide Supports</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <!-- form  -->
+          <div class="col-12 form-container  ">
+           <form action="" class="card py-4 px-4 rounded-3 position-relative border border-0" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+             <div class="container">
+              <div class="row ">
+                <div class="col-12 col-lg-4  ">
+                   <i class="bi bi-geo-alt text-muted  me-2 mt-2 "></i>
+                      <label for="inputState" class="form-label text-muted">Location</label>
+                      <select id="inputState" class="form-select text-muted">
+                        <option selected>Select Location</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+                <div class="col-12 col-lg-4  ">
+                   <i class="bi bi-calendar text-muted  me-2 mt-2 "></i>
+                      <label for="inputState" class="form-label text-muted">Check in-out</label>
+                      <select id="inputState" class="form-select text-muted">
+                        <option selected>Select Location</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+                <div class="col-12 col-lg-4  ">
+                   <i class="bi bi-person text-muted  me-2 mt-2 "></i>
+                      <label for="inputState" class="form-label text-muted">Guests & rooms</label>
+                      <select id="inputState" class="form-select text-muted">
+                        <option selected>Select Location</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+              </div>
+              
+              
+           </form>
+          </div>
+            <div class="search">
+               <button class="btn btn-primary rounded-circle  " style="width: 50px; height: 50px;">
+                 <i class="bi bi-search fa-fw  "></i>
+              </button>
+            </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="hero-1 ">
+      <div class="container mt-5">
+        
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col ">
+                      <div class="card rounded-4 overflow-hidden">
+                        <div class="row d-flex align-items-center">
+                        <div class="col-6">
+                          <img src="./img/04 (3).jpg" class="w-100" alt="">
+                        </div>
+                        <div class="col-6 ">
+                          <a href="" class="text-decoration-none h6 d-block text-dark fw-bold">Up to 60% OFF</a>
+                          <a href="" class="text-decoration-none h-6 text-black text-muted">On Hotel Bookings Online</a>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col ">
+                      <div class="card rounded-4 overflow-hidden">
+                        <div class="row d-flex align-items-center">
+                        <div class="col-6">
+                          <img src="./img/03 (3).jpg" class="w-100" alt="">
+                        </div>
+                        <div class="col-6 ">
+                          <a href="" class="text-decoration-none h6 d-block text-dark fw-bold">Book & Enjoy</a>
+                          <a href="" class="text-decoration-none h-6 text-black text-muted">20% Off on the best available room rate</a>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col ">
+                      <div class="card rounded-4 overflow-hidden">
+                        <div class="row d-flex align-items-center">
+                        <div class="col-6">
+                          <img src="./img/02 (4).jpg" class="w-100" alt="">
+                        </div>
+                        <div class="col-6 ">
+                          <a href="" class="text-decoration-none h6 d-block text-dark fw-bold">Hot Summer Nights</a>
+                          <a href="" class="text-decoration-none h-6 text-black text-muted">Up to 3 nights free!</a>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col ">
+                      <div class="card rounded-4 overflow-hidden">
+                        <div class="row d-flex align-items-center">
+                        <div class="col-6">
+                          <img src="./img/01 (6).jpg" class="w-100" alt="">
+                        </div>
+                        <div class="col-6 ">
+                          <a href="" class="text-decoration-none h6 d-block text-dark fw-bold">Daily 50 lucky Winners get a free Stay</a>
+                          <a href="" class="text-decoration-none h-6 text-black text-muted">Valid till:15 Nov</a>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+           
+          </div>
+          <button class="carousel-control-prev btn bg-secondary rounded-circle my-auto ms-3 " style="width: 45px; height: 45px;" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <i class="bi bi-arrow-left "></i>
+          </button>
+          <button class="carousel-control-next btn bg-secondary rounded-circle my-auto me-3 " style="width: 45px; height: 45px;" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+           
+              <i class="bi bi-arrow-right "></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="bestHoliday">
+      <div class="container my-5">
+        <div class="row ">
+          <div class="col-12 col-lg-6 pe-5 mb-4 mb-lg mb-3 mb-lg-0 ">
+            <div class="image-relative">
+              <img src="./img/01 (1).jpg" class="w-100 rounded-4" alt="">
+              <!-- client  -->
+             <div class="client-absolute">
+               <div class="card px-4 py-2 rounded-4 position-relative  " style="width: 280px;">
+                  <div class=" d-flex justify-content-between">
+                    <div class="">
+                      <h6 class="text-muted">Client</p>
+                      <img src="./img/01.jpg" class="rounded-circle" style="width: 40px;margin-left: -15px;margin-left: 0px;" alt="">
+                      <img src="./img/02.jpg" class="rounded-circle" style="width: 40px;margin-left: -15px;" alt="">
+                      <img src="./img/03.jpg" class="rounded-circle" style="width: 40px;margin-left: -15px;" alt="">
+                      <img src="./img/04.jpg" class="rounded-circle" style="width: 40px;margin-left: -15px;" alt="">
+                      <!-- <div class="bg-primary rounded-circle text-white small" style="width:45px;height:45px; padding: 14px;">
+                        1K
+                      </div> -->
+                    </div>
+                    <div class="">
+                      <h6 class="mb-4  text-muted">Rating</h6>
+                      <h6 class="fw-bold">4.5<i class="fa-solid fa-star text-warning ms-1"></i></h6>
+                    </div>
+                  </div>
+                  <img src="./img/01.svg" class=" position-absolute top-0 start-0 translate-middle " style="width: 40px;" alt="">
+
+                </div>
+             </div>
+            </div>
+          </div>
+          <!-- the best holiday  -->
+          <div class="col-12 col-lg-6">
+            <div class="row">
+              <div class="col-12 mb-3">
+                <h1 class="display-5 fw-bolder mb-4">The Best Holidays Start Here!</h1>
+                <p class="text-muted">
+                  Book your hotel with us and don't forget to grab an awesome hotel deal to save massive on your stay.
+                </p>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="icon text-success bg-success bg-opacity-25 rounded-circle mb-2  ">
+                  <i class="fa-solid fa-utensils "></i>
+                </div>
+                <h5 class="fw-bold">Quality Food</h5>
+                <p class="text-muted">
+                  Departure defective arranging rapturous did. Conduct denied adding worthy little.
+                </p>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="icon text-danger bg-danger bg-opacity-25 rounded-circle mb-2  ">
+                  <i class="bi bi-stopwatch-fill"></i>
+                </div>
+                <h5 class="fw-bold">Quick Services</h5>
+                <p class="text-muted">
+                  Supposing so be resolving breakfast am or perfectly.
+                </p>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="icon text-orange bg-orange bg-opacity-25 rounded-circle mb-2  ">
+                  <i class="bi bi-shield-fill-check"></i>
+                </div>
+                <h5 class="fw-bold">High Security</h5>
+                <p class="text-muted">
+                  Arranging rapturous did believe him all had supported.
+                </p>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="icon text-blue bg-blue bg-opacity-25 rounded-circle mb-2  ">
+                  <i class="bi bi-lightning-fill"></i>
+                </div>
+                <h5 class="fw-bold">24 Hours Alert</h5>
+                <p class="text-muted">
+                  Rapturous did believe him all had supported.
+                </p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- features  -->
+    <section class="features">
+      <div class="container">
+        <h1 class="display-5 fw-bold text-center">Featured Hotels</h1>
+        <div class="row">
+          <!-- first features  -->
+          <div class="col-12 col-sm-6 mb-4 ">
+            <div class="newyork-relative">
+              <img src="./img/01 (2).jpg" class="w-100 rounded-4 animate__animated animate__pulse" alt="">
+              <div class="badge bg-dark fw-light fs-6 rounded-pill px-3 py-2 newyork-absolute">
+                <i class="bi bi-geo-alt me-2"></i>
+                New York
+              </div>
+            </div>
+            <h5 class="fw-bold mt-3 px-3">Baga Comfort</h5>
+            <div class="d-flex justify-content-between px-3 ">
+              <h6 class="text-success fw-bolder">$455 <span class="fw-lighter small">/starting at</span></h6>
+              <h6 class="fw-bold">4.5<i class="fa-solid fa-star text-warning ms-1"></i></h6>
+            </div>
+          </div>
+           <div class="col-12 col-sm-6 mb-4 ">
+            <div class="newyork-relative">
+              <img src="./img/02 (1).jpg" class="w-100 rounded-4 animate__animated animate__pulse" alt="">
+              <div class="badge bg-dark fw-light fs-6 rounded-pill px-3 py-2 newyork-absolute">
+                <i class="bi bi-geo-alt me-2"></i>
+                California
+              </div>
+            </div>
+            <h5 class="fw-bold mt-3 px-3 ">Baga Comfort</h5>
+            <div class="d-flex justify-content-between px-3 ">
+              <h6 class="text-success fw-bolder">$585 <span class="fw-lighter small">/starting at</span></h6>
+              <h6 class="fw-bold">4.8<i class="fa-solid fa-star text-warning ms-1"></i></h6>
+            </div>
+          </div>
+           <div class="col-12 col-sm-6 ">
+            <div class="newyork-relative">
+              <img src="./img/03 (1).jpg" class="w-100 rounded-4 animate__animated animate__pulse" alt="">
+              <div class="badge bg-dark fw-light fs-6 rounded-pill px-3 py-2 newyork-absolute">
+                <i class="bi bi-geo-alt me-2"></i>
+                Los Angeles
+              </div>
+            </div>
+            <h5 class="fw-bold mt-3 px-3">Baga Comfort</h5>
+            <div class="d-flex justify-content-between px-3 ">
+              <h6 class="text-success fw-bolder">$385 <span class="fw-lighter small">/starting at</span></h6>
+              <h6 class="fw-bold">4.6<i class="fa-solid fa-star text-warning ms-1"></i></h6>
+            </div>
+          </div>
+           <div class="col-12 col-sm-6 ">
+            <div class="newyork-relative">
+              <img src="./img/04 (1).jpg" class="w-100 rounded-4 animate__animated animate__pulse" alt="">
+              <div class="badge bg-dark fw-light fs-6 rounded-pill px-3 py-2 newyork-absolute">
+                <i class="bi bi-geo-alt me-2"></i>
+                Chicago
+              </div>
+            </div>
+            <h5 class="fw-bold mt-3 px-3">Helios Beach Resort</h5>
+            <div class="d-flex justify-content-between px-3 ">
+              <h6 class="text-success fw-bolder">$665 <span class="fw-lighter small">/starting at</span></h6>
+              <h6 class="fw-bold">4.8<i class="fa-solid fa-star text-warning ms-1"></i></h6>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </section>
+    <!-- image 6  -->
+    <section>
+      <div class="container mt-5 py-5">
+        <div class="row">
+          <div class="col-6 col-sm-3 mb-5">
+            <img src="./img/01 (1).svg" class="w-100" alt="">
+          </div>
+          <div class="col-6 col-sm-3 mb-5">
+            <img src="./img/02.svg" class="w-100" alt="">
+          </div>
+          <div class="col-6 col-sm-3 mb-5">
+            <img src="./img/03.svg" class="w-100" alt="">
+          </div>
+          <div class="col-6 col-sm-3 mb-5">
+            <img src="./img/04.svg" class="w-100" alt="">
+          </div>
+          <!-- <div class="col-6 col-sm-3"></div> -->
+          <div class="col-6 col-sm-3 mb-5 offset-sm-3">
+            <img src="./img/05.svg" class="w-100" alt="">
+          </div>
+          <div class="col-6 col-sm-3 mb-5 ">
+            <img src="./img/06.svg" class="w-100" alt="">
+          </div>
+          <div class="col-6 col-sm-3 mb-5"></div>
+        </div>
+      </div>
+    </section>
+    <!-- recommendation  -->
+    <section>
+      <div class="container">
+        <div id="carouselExample1" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            
+            <div class="row d-flex align-items-center">
+              <div class="col-12 col-md-6">
+                <div class="surprise-relative">
+                  <img src="./img/01 (3).jpg" class=" w-100 rounded-4 p-5  "  alt="">
+                
+                    <img src="./img/02 (1).svg" class="bg-darkOrange p-2 rounded-3 surprise-absolute"  style="width: 60px;" alt="">
+                  
+                </div>
+              </div>
+              <div class="col-12 offset-md-1 col-md-5">
+                <span class="display-3 mb-0 text-primary"><i class="bi bi-quote"></i></span>
+                <h5 class="text-muted text-light lh-lg">
+                  Moonlight newspaper up its enjoyment agreeable depending. Timed voice share led him to widen noisy young. At weddings believed in laughing
+                </h5>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <p class="fw-bold m-0 mt-2">Billy Vasquez</p>
+                <p class="m-0 text-muted">Ceo of Apple</p>
+              </div>
+            </div>
+           
+          </div>
+          <div class="carousel-item">
+            
+            <div class="row d-flex align-items-center">
+              <div class="col-12 col-md-6">
+                <div class="surprise-relative">
+                  <img src="./img/02 (2).jpg" class="w-100 rounded-4 p-5 rounded-3  "  alt="">
+                
+                    <img src="./img/03 (1).svg" class="bg-darkOrange p-2 rounded-3 surprise-absolute"  style="width: 60px;" alt="">
+                  
+                </div>
+              </div>
+              <div class="col-12 offset-md-1 col-md-5">
+                <span class="display-3 mb-0 text-primary"><i class="bi bi-quote"></i></span>
+                <h5 class="text-muted text-light lh-lg">
+                  Passage its ten led hearted removal cordial. Preference any astonished unreserved Mrs. understood the Preference unreserved.
+                </h5>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <p class="fw-bold m-0 mt-2">Carolyn Ortiz</p>
+                <p class="m-0 text-muted">Ceo of Google</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <button class="carousel-control-prev btn bg-secondary rounded-circle my-auto ms-3 " style="width: 45px; height: 45px;" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+              <i class="bi bi-arrow-left "></i>
+          </button>
+          <button class="carousel-control-next btn bg-secondary rounded-circle my-auto me-3 " style="width: 45px; height: 45px;" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+           
+              <i class="bi bi-arrow-right "></i>
+          </button>
+      </div>
+      </div>
+    </section>
+    <!-- expore  -->
+    <section class="explore">
+      <div class="container mt-5">
+        <h1 class="display-5 fw-bold text-center">Explore Nearby</h1>
+        <div class="row">
+          <div class="col-6 col-sm-4 col-md-3">
+            <img src="./img/01 (4).jpg" class="w-100 rounded-circle p-2" alt="">
+            <div class="text-center mt-2">
+              <a href="" class="text-decoration-none text-dark fw-bold h5  ">San Francisco</a>
+              <p class="mt-2">13 min drive</p>
+            </div>
+          </div>
+           <div class="col-6 col-sm-4 col-md-3">
+            <img src="./img/02 (3).jpg" class="w-100 rounded-circle p-2" alt="">
+            <div class="text-center mt-2">
+              <a href="" class="text-decoration-none text-dark fw-bold h5  ">Los Angeles</a>
+              <p class="mt-2">25 min drive</p>
+            </div>
+          </div>
+           <div class="col-6 col-sm-4 col-md-3">
+            <img src="./img/03 (2).jpg" class="w-100 rounded-circle p-2" alt="">
+            <div class="text-center mt-2">
+              <a href="" class="text-decoration-none text-dark fw-bold h5  ">Miami</a>
+              <p class="mt-2">45 min drive</p>
+            </div>
+          </div>
+           <div class="col-6 col-sm-4 col-md-3">
+            <img src="./img/04 (2).jpg" class="w-100 rounded-circle p-2" alt="">
+            <div class="text-center mt-2">
+              <a href="" class="text-decoration-none text-dark fw-bold h5  ">Sanjosh</a>
+              <p class="mt-2">55 min drive</p>
+            </div>
+          </div>
+           <div class="col-6 col-sm-4 col-md-3">
+            <img src="./img/05.jpg" class="w-100 rounded-circle p-2" alt="">
+            <div class="text-center mt-2">
+              <a href="" class="text-decoration-none text-dark fw-bold h5  ">New York</a>
+              <p class="mt-2">1-hour drive</p>
+            </div>
+          </div>
+           <div class="col-6 col-sm-4 col-md-3">
+            <img src="./img/06 (1).jpg" class="w-100 rounded-circle p-2" alt="">
+            <div class="text-center mt-2">
+              <a href="" class="text-decoration-none text-dark fw-bold h5  ">North Justen</a>
+              <p class="mt-2">2-hour drive</p>
+            </div>
+          </div>
+           <div class="col-6 col-sm-4 col-md-3">
+            <img src="./img/07.jpg" class="w-100 rounded-circle p-2" alt="">
+            <div class="text-center mt-2">
+              <a href="" class="text-decoration-none text-dark fw-bold h5  ">Rio</a>
+              <p class="mt-2">20 min drive</p>
+            </div>
+          </div>
+           <div class="col-6 col-sm-4 col-md-3">
+            <img src="./img/08.jpg" class="w-100 rounded-circle p-2" alt="">
+            <div class="text-center mt-2">
+              <a href="" class="text-decoration-none text-dark fw-bold h5  ">Las Vegas</a>
+              <p class="mt-2">3-hour drive</p>
+            </div>
+          </div>
+           <div class="col-6 col-sm-4 col-md-3">
+            <img src="./img/09.jpg" class="w-100 rounded-circle p-2" alt="">
+            <div class="text-center mt-2">
+              <a href="" class="text-decoration-none text-dark fw-bold h5  ">Texas</a>
+              <p class="mt-2">55 min drive</p>
+            </div>
+          </div>
+           <div class="col-6 col-sm-4 col-md-3">
+            <img src="./img/10.jpg" class="w-100 rounded-circle p-2" alt="">
+            <div class="text-center mt-2">
+              <a href="" class="text-decoration-none text-dark fw-bold h5  ">Chicago</a>
+              <p class="mt-2">13 min drive</p>
+            </div>
+          </div>
+           <div class="col-6 col-sm-4 col-md-3">
+            <img src="./img/11.jpg" class="w-100 rounded-circle p-2" alt="">
+            <div class="text-center mt-2">
+              <a href="" class="text-decoration-none text-dark fw-bold h5  ">New Keagan</a>
+              <p class="mt-2">35 min drive</p>
+            </div>
+          </div>
+           <div class="col-6 col-sm-4 col-md-3">
+            <img src="./img/01 (4).jpg" class="w-100 rounded-circle p-2" alt="">
+            <div class="text-center mt-2">
+              <a href="" class="text-decoration-none text-dark fw-bold h5  ">Oslo</a>
+              <p class="mt-2">1 hour 13 min drive</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- help/payment  -->
+    
+    <section>
+      <div class="container-fluid bg-secondary p-5 ">
+       <div class="container">
+         <div class="row">
+          <div class="col-12 col-md-6  ">
+            <div class="card rounded-4 p-2 ">
+              <div class="card-body d-flex">
+                <i class="fa-solid fa-hand-holding-heart fs-2 me-3"></i>
+              <div>
+                <h5 class="fw-bold">24x7 Help</h5>
+                <p class="text-muted m-0">If we fall short of your expectation in any way, let us know</p>
+              </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-12 col-md-6 ">
+            <div class="card rounded-4 p-2 ">
+              <div class="card-body d-flex">
+                <i class="fa-solid fa-hand-holding-usd fs-2 me-3"></i>
+              <div>
+                <h5 class="fw-bold">Payment Trust</h5>
+                <p class="text-muted m-0">All refunds come with no questions asked guarantee</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <h5 class="fw-bold my-3">Download app</h5>
+         <div class="">
+          <a href="">
+            <img src="./img/google-play.svg" class="w-25 me-4" alt="">
+          </a>
+          <a href="">
+            <img src="./img/app-store.svg" class="w-25 " alt="">
+          </a>
+         </div>
+       </div>
+      </div>
+    </section>
+   
+   </main>
+    <!-- footer  -->
+    <footer>
+      <div class="container-fluid bg-dark  ">
+        <div class="container pt-5 ">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-4">
+              <img src="./img/logo (1).svg" style="width: 150px;" class="mb-3" alt="">
+              <p class="text-secondary ">
+                Departure defective arranging rapturous did believe him all had supported.
+              </p>
+              <a href="" class="text-secondary text-primary-hover text-decoration-none">
+                <i class="bi bi-telephone me-2"></i>
+                +1234 568 963
+              </a>
+              <div>
+                <a href="" class="text-secondary text-primary-hover text-decoration-none">
+               <i class="bi bi-envelope me-2"></i>
+                example@gmail.com
+              </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2">
+              <h5 class="fw-bold my-3 text-white">Page</h5>
+              <ul class="list-group">
+                <li class="list-unstyled my-2">
+                  <a href="" class="text-decoration-none  text-secondary">About us</a>
+                </li>
+                 <li class="list-unstyled mb-2">
+                  <a href="" class="text-decoration-none  text-secondary">Contact us</a>
+                </li>
+                 <li class="list-unstyled mb-2">
+                  <a href="" class="text-decoration-none  text-secondary">News and Blog</a>
+                </li>
+                 <li class="list-unstyled mb-2">
+                  <a href="" class="text-decoration-none  text-secondary">Meet a Team</a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-6 col-md-3 col-lg-2">
+              <h5 class="fw-bold my-3 text-white">Link</h5>
+              <ul class="list-group">
+                <li class="list-unstyled my-2">
+                  <a href="" class="text-decoration-none text-secondary">Sign Up</a>
+                </li>
+                 <li class="list-unstyled mb-2">
+                  <a href="" class="text-decoration-none text-secondary">Sign in</a>
+                </li>
+                 <li class="list-unstyled mb-2">
+                  <a href="" class="text-decoration-none text-secondary">Privacy Policy</a>
+                </li>
+                 <li class="list-unstyled mb-2">
+                  <a href="" class="text-decoration-none text-secondary">Terms</a>
+                </li>
+                <li class="list-unstyled mb-2">
+                  <a href="" class="text-decoration-none text-secondary">Cookies</a>
+                </li><li class="list-unstyled mb-2">
+                  <a href="" class="text-decoration-none text-secondary">Support</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2">
+              <h5 class="fw-bold my-3 text-white">Global Site</h5>
+              <ul class="list-group">
+                <li class="list-unstyled my-2">
+                  <a href="" class="text-decoration-none text-secondary">India</a>
+                </li>
+                 <li class="list-unstyled mb-2">
+                  <a href="" class="text-decoration-none text-secondary">California</a>
+                </li>
+                 <li class="list-unstyled mb-2">
+                  <a href="" class="text-decoration-none text-secondary">Indonesia</a>
+                </li>
+                 <li class="list-unstyled mb-2">
+                  <a href="" class="text-decoration-none text-secondary">Canada</a>
+                </li>
+                <li class="list-unstyled mb-2">
+                  <a href="" class="text-decoration-none text-secondary">Malaysia</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2">
+               <h5 class="fw-bold my-3 text-white">Booking</h5>
+              <ul class="list-group">
+                <li class="list-unstyled my-2">
+                  <a href="" class="text-decoration-none text-secondary">
+                    <i class="fa-solid fa-hotel me-2"></i>Hotel
+                  </a>
+                </li>
+                 <li class="list-unstyled mb-2">
+                  <a href="" class="text-decoration-none text-secondary">
+                    <i class="fa-solid fa-plane me-2"></i>Flight
+                  </a>
+                </li>
+                 <li class="list-unstyled mb-2">
+                  <a href="" class="text-decoration-none text-secondary">
+                    <i class="fa-solid fa-globe-americas me-2"></i>Tour
+                  </a>
+                </li>
+                 <li class="list-unstyled mb-2">
+                  <a href="" class="text-decoration-none text-secondary">
+                    <i class="fa-solid fa-car me-2"></i>Cabs
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <h5 class="fw-bold my-3 text-white">Top Links</h5>
+            <p>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    Flights
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                   Hotels
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    Tours
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    Cabs
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    About
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    Contact 
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    Blogs
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    Services
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    Detail
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    Services
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    Policy
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    Testimonials
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    Newsletters
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    Podcasts
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    Protests
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    NewsCyper
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    Education
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    Sports
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    Tech and Auto
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    Option
+                  </a>
+                  <a href="" class="text-decoration-none text-secondary me-2">
+                    Share Market
+                  </a>
+              </ul>
+            </p>
+          </div>
+          <div class="row mt-4 border-bottom ">
+            <div class=" d-md-flex justify-content-md-between">
+              <div class="mb-3 ">
+              <h5 class="fw-bold text-white mb-3">Payment & Security</h5>
+              <img src="./img/paypal.svg" class="me-2" style="width: 100px;" alt="">
+              <img src="./img/visa.svg" class="me-2" style="width: 50px;" alt="">
+              <img src="./img/mastercard.svg" class="me-2" style="width: 50px;" alt="">
+              <img src="./img/expresscard.svg" class="me-2" style="width: 50px;" alt="">
+              
+            </div>
+            <div>
+              <h5 class="fw-bold text-white mb-3">Follow us on</h5>
+              <a href="" class="btn btn-facebook btn-sm">
+                <i class="fab fa-fw fa-facebook-f text-secondary" ></i>
+              </a>
+              <a href="" class="btn btn-instagrm btn-sm">
+               
+               <i class="fab fa-fw fa-instagram" ></i>
+              </a>
+              </a>
+              <a href="" class="btn btn-twitter btn-sm">
+                <i class="fab fa-fw fa-twitter text-secondary"></i>
+              </a>
+              <a href="" class="btn btn-linkedIn btn-sm">
+                <i class="fab fa-fw fa-linkedin-in text-secondary"></i>
+              </a>
+
+
+            </div>
+            </div>
+          </div>
+          <div class="row mt-4  ">
+           <div class="d-lg-flex text-center justify-content-lg-between">
+             <p class="text-secondary">Copyrights <a href="#" class="text-secondary text-decoration-none">©2022 Booking.</a> All rights reserved.</p>
+            <div>
+              <a href="#" class="text-secondary text-decoration-none me-4">Privacy Policy</a>
+              <a href="#" class="text-secondary text-decoration-none me-4">Terms and conditions</a>
+              <a href="#" class="text-secondary text-decoration-none me-4">Refund policy</a>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

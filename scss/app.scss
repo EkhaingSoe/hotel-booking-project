@@ -1,0 +1,72 @@
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
+
+//  font-family: 'DM Sans', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
+$font-family-sans-serif:'DM Sans', sans-serif;
+$headings-font-family: 'Poppins';
+
+$theme-colors:(
+    "eks":#ffe1e4d9,
+    "secondary":#DFDFE3,
+    "primary":#5143D9,
+    "light":#f9f5f5f0,
+    "danger":#D6293E,
+    "dark":black,
+    "white":white,
+    "warning":#F7C32E,
+    "success":#0CBC87,
+    "orange":#FD7E14,
+    "blue":#17A2B8,
+    "darkOrange":#fe7404,
+    "facebook":#5374BB,
+    "instagrm":#AE2666,
+    "twitter":#39ABDC,
+    "linkedIn":#207EB4,
+);
+
+//color
+$primary:#5143D9;
+$secondary:#DFDFE3;
+$eks:#ebcbcf33;
+$light:#f9f5f5f0;
+$danger:#D6293E;
+$dark:black;
+$white:white;
+$warning:#F7C32E;
+$success:#0CBC87;
+$orange:#FD7E14;
+$blue:#17A2B8;
+$darkOrange:#fe7404;
+$facebook:#5374BB;
+$instagrm:#AE2666;
+$twitter:#39ABDC;
+$linkedIn:#207EB4;
+
+//badge
+
+
+//list-group
+
+$list-group-hover-bg: #EDECFB;
+$list-group-action-active-bg:#EDECFB;
+$list-group-action-hover-color: $primary;
+
+//btn
+$btn-padding-y:.6rem;
+$btn-padding-x:1rem;
+
+//select
+$form-select-padding-y: .8rem;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../node_modules/animate.css/animate.min.css";
+
+//css
+
+.category:hover{
+    color: #5143D9;
+}
+
